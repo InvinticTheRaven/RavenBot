@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+, const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config.json");
 
@@ -20,7 +20,7 @@ client.on('message', async message => {
     const command = args.shift().toLowerCase();
 
     if(command === "help") {
-        message.reply('The Raven will respond when you say  :raven ask. ')
+        message.reply('The Raven will respond when you say  :raven ask <question>, :raven advice ')
     }
 });
     if(command === "ask") {
