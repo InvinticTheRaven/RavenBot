@@ -1,4 +1,5 @@
 
+client.login(process.argv[2])
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config.json");
@@ -22,7 +23,8 @@ client.on('message', async message => {
 
     if(command === "help") {
         message.reply('
-        The Raven will respond when you say colon raven advice
+        The Raven will respond when you say  :raven advice
                       
                       ')
     }
+client.login(process.argv[2])
