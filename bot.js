@@ -22,7 +22,7 @@ client.on('message', async message => {
 
     if(command === "help") {
         message.reply('
-        The Raven will respond when you say :raven advice
+        The Raven will respond when you say colon raven advice
                       
                       ')
     }
