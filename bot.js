@@ -22,9 +22,8 @@ client.on('message', async message => {
     const command = args.shift().toLowerCase();
 
     if(command === "help") {
-        message.reply('
-        The Raven will respond when you say  :raven advice
-                      
-                      ')
+        message.reply('The Raven will respond when you say  :raven advice')
     }
+});
+
 client.login(process.argv[2])
