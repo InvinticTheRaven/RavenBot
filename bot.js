@@ -21,7 +21,7 @@ client.on('message', async message => {
     const command = args.shift().toLowerCase();
 
     if(command === "help") {
-        message.reply('The Raven will respond when you say :raven ask <question>, :raven advice, :raven song '    
+        message.reply('The Raven will respond when you say :raven ask <question>, :raven advice, :raven song') 
     }
          if(command === "ask") {
         message.reply('Yes.')
@@ -31,6 +31,5 @@ client.on('message', async message => {
             message.reply('Sing me a song you the piano man. *Okay, son. I will!* "I was walking down the street. And then our eyes have meet. The prince stares at the pauper. The fire and the water. He said- *notices son fell asleep* WHY?!?!?')
         }
 });
-  
   
     client.login(process.argv[2])
