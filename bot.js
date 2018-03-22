@@ -1,4 +1,5 @@
-, const Discord = require('discord.js');
+        
+const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config.json");
 
@@ -20,10 +21,16 @@ client.on('message', async message => {
     const command = args.shift().toLowerCase();
 
     if(command === "help") {
-        message.reply('The Raven will respond when you say  :raven ask <question>, :raven advice ')
+        message.reply('The Raven will respond when you say :raven ask <question>, :raven advice, :raven song '    
     }
+         if(command === "ask") {
+        message.reply('Yes.')
+           
+        }
+        if(command === "song") {
+            message.reply('Sing me a song you the piano man. *Okay, son. I will!* "I was walking down the street. And then our eyes have meet. The prince stares at the pauper. The fire and the water. He said- *notices son fell asleep* WHY?!?!?')
+        }
 });
-    if(command === "ask") {
-     message.reply "The raven is thinking... And the answer is... No."
-    }
-client.login(process.argv[2])
+  
+  
+    client.login(process.argv[2])
